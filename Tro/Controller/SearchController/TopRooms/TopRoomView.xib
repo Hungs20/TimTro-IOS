@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopRoomView" customModule="Tro" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="1lU-lP-Rhj" id="8Kn-J0-R3P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="690"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWb-ga-nnS">
+                    <rect key="frame" x="0.0" y="0.0" width="466" height="500"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1lU-lP-Rhj">
+                            <rect key="frame" x="15" y="40.5" width="436" height="459.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bGg-Dy-Gn2">
+                                <size key="itemSize" width="150" height="250"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phòng nổi bật" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flv-VD-pWM">
+                            <rect key="frame" x="15" y="15" width="436" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="1lU-lP-Rhj" firstAttribute="leading" secondItem="HWb-ga-nnS" secondAttribute="leading" constant="15" id="4nS-dq-6z6"/>
+                        <constraint firstAttribute="height" constant="500" id="8OO-rP-0K9"/>
+                        <constraint firstItem="flv-VD-pWM" firstAttribute="leading" secondItem="HWb-ga-nnS" secondAttribute="leading" constant="15" id="IMg-bn-ix6"/>
+                        <constraint firstAttribute="trailing" secondItem="flv-VD-pWM" secondAttribute="trailing" constant="15" id="JeV-ND-OsU"/>
+                        <constraint firstItem="flv-VD-pWM" firstAttribute="top" secondItem="HWb-ga-nnS" secondAttribute="top" constant="15" id="M2n-LU-pQS"/>
+                        <constraint firstAttribute="trailing" secondItem="1lU-lP-Rhj" secondAttribute="trailing" constant="15" id="NTf-Kl-9tp"/>
+                        <constraint firstAttribute="bottom" secondItem="1lU-lP-Rhj" secondAttribute="bottom" id="Pe8-Kd-2HP"/>
+                        <constraint firstItem="1lU-lP-Rhj" firstAttribute="top" secondItem="flv-VD-pWM" secondAttribute="bottom" constant="5" id="R1v-Pe-IMg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="HWb-ga-nnS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Bnm-jx-Tt0"/>
+                <constraint firstItem="HWb-ga-nnS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CjH-Pe-t5D"/>
+                <constraint firstItem="HWb-ga-nnS" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="UPM-LW-ZNE"/>
+                <constraint firstItem="HWb-ga-nnS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fvE-pC-jBo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HWb-ga-nnS" secondAttribute="trailing" id="wSV-P4-nib"/>
+                <constraint firstAttribute="bottom" secondItem="HWb-ga-nnS" secondAttribute="bottom" id="y3y-f2-y6C"/>
+                <constraint firstItem="HWb-ga-nnS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zts-hL-qvK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="169.56521739130437" y="67.633928571428569"/>
+        </view>
+    </objects>
+</document>

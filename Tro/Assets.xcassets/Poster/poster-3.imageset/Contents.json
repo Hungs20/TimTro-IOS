@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "1540977517cho-thue-nha-gia-re-ha-noi.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "1540977517cho-thue-nha-gia-re-ha-noi-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "1540977517cho-thue-nha-gia-re-ha-noi-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

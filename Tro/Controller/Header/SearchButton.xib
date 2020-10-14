@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchButton" customModule="Tro" customModuleProvider="target">
+            <connections>
+                <outlet property="imageButton" destination="Zc0-fN-6Rp" id="Fdo-Z1-biQ"/>
+                <outlet property="titleButton" destination="9V2-ME-ayI" id="gwB-sm-r4Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zc0-fN-6Rp">
+                    <rect key="frame" x="15" y="14" width="95" height="51.5"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="x3p-1N-cAI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tìm theo nhiều quận" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="9V2-ME-ayI">
+                    <rect key="frame" x="15" y="75" width="95" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVn-P8-lrl">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="120"/>
+                    <connections>
+                        <action selector="buttonPress:" destination="-1" eventType="touchUpInside" id="JFa-K5-PUP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PVn-P8-lrl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="10g-ja-syr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PVn-P8-lrl" secondAttribute="bottom" id="5qR-ox-MQh"/>
+                <constraint firstItem="9V2-ME-ayI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="DmC-kY-DPm"/>
+                <constraint firstItem="Zc0-fN-6Rp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Jvy-iz-aRV"/>
+                <constraint firstItem="PVn-P8-lrl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vec-x3-unp"/>
+                <constraint firstItem="Zc0-fN-6Rp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="bhm-nj-3ct"/>
+                <constraint firstAttribute="trailing" secondItem="9V2-ME-ayI" secondAttribute="trailing" constant="15" id="kaH-LO-lDt"/>
+                <constraint firstItem="9V2-ME-ayI" firstAttribute="top" secondItem="Zc0-fN-6Rp" secondAttribute="bottom" constant="10" id="lhR-XX-J2w"/>
+                <constraint firstAttribute="trailing" secondItem="PVn-P8-lrl" secondAttribute="trailing" id="qqo-Ti-f3t"/>
+                <constraint firstItem="Zc0-fN-6Rp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="tiE-1m-8Ot"/>
+                <constraint firstAttribute="trailing" secondItem="Zc0-fN-6Rp" secondAttribute="trailing" constant="15" id="tlr-hA-qco"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="102.17391304347827" y="-122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bolt" catalog="system" width="101" height="128"/>
+    </resources>
+</document>

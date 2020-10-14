@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchHeader" customModule="Tro" customModuleProvider="target">
+            <connections>
+                <outlet property="itemButtonStackView" destination="6YY-pc-LJF" id="Vne-7b-hm5"/>
+                <outlet property="pageControl" destination="Vad-hA-5MT" id="Xqr-FI-FVe"/>
+                <outlet property="posterImage" destination="a1r-JK-yeo" id="FqQ-hs-zb9"/>
+                <outlet property="searchBar" destination="U83-84-2S6" id="2P2-ST-SE7"/>
+                <outlet property="searchView" destination="hW4-vw-sgp" id="hYj-33-Pro"/>
+                <outlet property="stackView" destination="P9j-W0-TTE" id="ly0-ZJ-Ze8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="448"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcr-3t-ora">
+                    <rect key="frame" x="0.0" y="0.0" width="342" height="400"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster-1" translatesAutoresizingMaskIntoConstraints="NO" id="a1r-JK-yeo">
+                            <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="aIC-kE-48e"/>
+                            </constraints>
+                        </imageView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" defersCurrentPageDisplay="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vad-hA-5MT">
+                            <rect key="frame" x="151.5" y="128" width="39" height="37"/>
+                            <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="currentPageIndicatorTintColor" name="tro-color"/>
+                        </pageControl>
+                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P9j-W0-TTE">
+                            <rect key="frame" x="20" y="175" width="302" height="225"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dtd-8Z-Bq2">
+                                    <rect key="frame" x="0.0" y="0.0" width="302" height="70"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hW4-vw-sgp">
+                                            <rect key="frame" x="15" y="15" width="272" height="40"/>
+                                            <subviews>
+                                                <searchBar clipsSubviews="YES" contentMode="redraw" searchBarStyle="prominent" placeholder="Tìm theo quận, tên đường, địa điểm" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U83-84-2S6">
+                                                    <rect key="frame" x="58" y="0.0" width="214" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="barTintColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="search"/>
+                                                    <scopeButtonTitles>
+                                                        <string>Title</string>
+                                                        <string>Title</string>
+                                                    </scopeButtonTitles>
+                                                </searchBar>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M9A-BD-ZCQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="MtU-bM-i37"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Hà Nội" image="mappin.and.ellipse" catalog="system">
+                                                        <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="changePosition:" destination="-1" eventType="touchUpInside" id="SdJ-Vg-ZGS"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="6gJ-Zb-qbL"/>
+                                                <constraint firstItem="M9A-BD-ZCQ" firstAttribute="trailing" secondItem="U83-84-2S6" secondAttribute="leading" constant="12" id="AP5-OX-wAU"/>
+                                                <constraint firstAttribute="trailing" secondItem="U83-84-2S6" secondAttribute="trailing" id="Aq4-xp-FYl"/>
+                                                <constraint firstAttribute="bottom" secondItem="M9A-BD-ZCQ" secondAttribute="bottom" id="Im5-SL-EvF"/>
+                                                <constraint firstAttribute="bottom" secondItem="U83-84-2S6" secondAttribute="bottom" id="Qr4-Ed-007"/>
+                                                <constraint firstItem="U83-84-2S6" firstAttribute="top" secondItem="hW4-vw-sgp" secondAttribute="top" id="c0o-u0-5CN"/>
+                                                <constraint firstItem="M9A-BD-ZCQ" firstAttribute="leading" secondItem="hW4-vw-sgp" secondAttribute="leading" id="j86-qt-7Zd"/>
+                                                <constraint firstItem="M9A-BD-ZCQ" firstAttribute="top" secondItem="hW4-vw-sgp" secondAttribute="top" id="vS2-eS-IxF"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="hW4-vw-sgp" secondAttribute="bottom" constant="15" id="JTq-WA-o0l"/>
+                                        <constraint firstAttribute="height" priority="250" constant="70" id="JtF-6b-5x8"/>
+                                        <constraint firstItem="hW4-vw-sgp" firstAttribute="top" secondItem="Dtd-8Z-Bq2" secondAttribute="top" constant="15" id="TcL-HX-lWJ"/>
+                                        <constraint firstItem="hW4-vw-sgp" firstAttribute="leading" secondItem="Dtd-8Z-Bq2" secondAttribute="leading" constant="15" id="efY-sM-MmA"/>
+                                        <constraint firstAttribute="trailing" secondItem="hW4-vw-sgp" secondAttribute="trailing" constant="15" id="keE-0B-13r"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6YY-pc-LJF">
+                                    <rect key="frame" x="0.0" y="70" width="302" height="155"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahr-Aj-c66" customClass="SearchButton" customModule="Tro" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="100.5" height="150"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-si-CSW" customClass="SearchButton" customModule="Tro" customModuleProvider="target">
+                                            <rect key="frame" x="100.5" y="0.0" width="101" height="150"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6h-7v-Lxc" customClass="SearchButton" customModule="Tro" customModuleProvider="target">
+                                            <rect key="frame" x="201.5" y="0.0" width="100.5" height="150"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="750" constant="150" id="M3y-CJ-69s"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="a1r-JK-yeo" firstAttribute="leading" secondItem="fcr-3t-ora" secondAttribute="leading" id="1jP-3P-eIe"/>
+                        <constraint firstItem="Vad-hA-5MT" firstAttribute="centerX" secondItem="fcr-3t-ora" secondAttribute="centerX" id="BKu-nM-sy6"/>
+                        <constraint firstAttribute="trailing" secondItem="P9j-W0-TTE" secondAttribute="trailing" constant="20" id="FjH-ri-9T9"/>
+                        <constraint firstItem="a1r-JK-yeo" firstAttribute="top" secondItem="fcr-3t-ora" secondAttribute="top" id="R8s-jL-5mo"/>
+                        <constraint firstItem="P9j-W0-TTE" firstAttribute="leading" secondItem="fcr-3t-ora" secondAttribute="leading" constant="20" id="VXF-X6-qtd"/>
+                        <constraint firstAttribute="height" constant="400" id="cC0-Gh-Bgn"/>
+                        <constraint firstAttribute="bottom" secondItem="P9j-W0-TTE" secondAttribute="bottom" id="dlZ-BN-4Ei"/>
+                        <constraint firstItem="P9j-W0-TTE" firstAttribute="top" secondItem="a1r-JK-yeo" secondAttribute="bottom" constant="-25" id="dnI-dr-bff"/>
+                        <constraint firstItem="P9j-W0-TTE" firstAttribute="top" secondItem="Vad-hA-5MT" secondAttribute="bottom" constant="10" id="hyp-Vd-Dn8"/>
+                        <constraint firstAttribute="trailing" secondItem="a1r-JK-yeo" secondAttribute="trailing" id="luq-AR-Ljs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fcr-3t-ora" secondAttribute="bottom" id="3dB-Rm-9fG"/>
+                <constraint firstItem="fcr-3t-ora" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Iqo-To-LMB"/>
+                <constraint firstItem="fcr-3t-ora" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="X3T-GX-hEX"/>
+                <constraint firstItem="fcr-3t-ora" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="irL-xl-yYC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="56.521739130434788" y="-178.125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <image name="poster-1" width="517" height="270"/>
+        <namedColor name="tro-color">
+            <color red="0.15399999916553497" green="0.41299998760223389" blue="0.69099998474121094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

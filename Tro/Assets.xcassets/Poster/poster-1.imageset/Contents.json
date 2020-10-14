@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "dang-tin-cho-thue-phong-tro_1577431065.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "dang-tin-cho-thue-phong-tro_1577431065-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "dang-tin-cho-thue-phong-tro_1577431065-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

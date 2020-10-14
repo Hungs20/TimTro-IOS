@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrendCollectionViewCell" id="gTV-IL-0wX" customClass="TrendCollectionViewCell" customModule="Tro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="198" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="198" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79L-Nn-3Vc">
+                        <rect key="frame" x="0.0" y="0.0" width="198" height="248"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster-1" translatesAutoresizingMaskIntoConstraints="NO" id="gr8-80-0z7">
+                                <rect key="frame" x="0.0" y="0.0" width="198" height="248"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hai Bà Trưng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdz-fc-d43">
+                                <rect key="frame" x="0.0" y="226" width="198" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sdz-fc-d43" secondAttribute="trailing" id="4Le-Ie-8vQ"/>
+                            <constraint firstAttribute="bottom" secondItem="gr8-80-0z7" secondAttribute="bottom" id="6Gz-mZ-PH3"/>
+                            <constraint firstAttribute="trailing" secondItem="gr8-80-0z7" secondAttribute="trailing" id="Fus-Ph-QB2"/>
+                            <constraint firstItem="gr8-80-0z7" firstAttribute="top" secondItem="79L-Nn-3Vc" secondAttribute="top" id="Qsk-uh-KjB"/>
+                            <constraint firstItem="sdz-fc-d43" firstAttribute="leading" secondItem="79L-Nn-3Vc" secondAttribute="leading" id="SLc-RE-zDB"/>
+                            <constraint firstItem="gr8-80-0z7" firstAttribute="leading" secondItem="79L-Nn-3Vc" secondAttribute="leading" id="c8d-dg-Gpm"/>
+                            <constraint firstAttribute="bottom" secondItem="sdz-fc-d43" secondAttribute="bottom" constant="5" id="gDl-gw-mqA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="79L-Nn-3Vc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Zp-5Z-Tyd"/>
+                <constraint firstItem="79L-Nn-3Vc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HXK-Bj-Ngo"/>
+                <constraint firstAttribute="bottom" secondItem="79L-Nn-3Vc" secondAttribute="bottom" id="itY-Ar-fpF"/>
+                <constraint firstAttribute="trailing" secondItem="79L-Nn-3Vc" secondAttribute="trailing" id="soD-PK-tgY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="198" height="248"/>
+            <connections>
+                <outlet property="imageCell" destination="gr8-80-0z7" id="tMC-X7-nGs"/>
+                <outlet property="titleCell" destination="sdz-fc-d43" id="3hg-2w-USi"/>
+                <outlet property="viewCell" destination="79L-Nn-3Vc" id="YDw-xQ-Ud8"/>
+            </connections>
+            <point key="canvasLocation" x="239.13043478260872" y="202.90178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="poster-1" width="517" height="270"/>
+    </resources>
+</document>
