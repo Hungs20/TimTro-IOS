@@ -17,6 +17,7 @@ class SearchViewController: UIViewController {
         initHeader()
         initTrendSearch()
         initTopRoom()
+        initTrendSearch()
     }
     
     func initHeader(){
