@@ -326,7 +326,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SỨC CHỨA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JM-PZ-KhA">
-                                            <rect key="frame" x="20" y="30.5" width="383" height="16"/>
+                                            <rect key="frame" x="15" y="30.5" width="388" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -460,7 +460,7 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstItem="1bz-YJ-Mnh" firstAttribute="leading" secondItem="SOt-HK-3hu" secondAttribute="leading" constant="15" id="07J-g6-aL2"/>
-                                        <constraint firstItem="6JM-PZ-KhA" firstAttribute="leading" secondItem="SOt-HK-3hu" secondAttribute="leading" constant="20" id="6at-QM-QAC"/>
+                                        <constraint firstItem="6JM-PZ-KhA" firstAttribute="leading" secondItem="SOt-HK-3hu" secondAttribute="leading" constant="15" id="6at-QM-QAC"/>
                                         <constraint firstItem="1bz-YJ-Mnh" firstAttribute="top" secondItem="SOt-HK-3hu" secondAttribute="top" constant="5" id="B1N-T9-ssb"/>
                                         <constraint firstAttribute="bottom" secondItem="cWt-gN-cLv" secondAttribute="bottom" id="PE3-oI-xzz"/>
                                         <constraint firstAttribute="trailing" secondItem="cWt-gN-cLv" secondAttribute="trailing" constant="20" id="R2j-9X-LqP"/>
