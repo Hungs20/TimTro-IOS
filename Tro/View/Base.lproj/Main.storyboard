@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tìm kiếm-->
+        <!--Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SearchViewController" customModule="Tro" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-U6-YM7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8C-7s-DNz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
@@ -28,14 +28,15 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="aqa-C5-0dR" firstAttribute="leading" secondItem="T8C-7s-DNz" secondAttribute="leading" id="B4p-rt-W5w"/>
                                             <constraint firstAttribute="height" constant="1500" id="J6X-rn-1FD"/>
-                                            <constraint firstAttribute="bottom" secondItem="aqa-C5-0dR" secondAttribute="bottom" id="Qeu-rz-i4T"/>
-                                            <constraint firstItem="aqa-C5-0dR" firstAttribute="top" secondItem="T8C-7s-DNz" secondAttribute="top" id="oYR-QM-u8Q"/>
-                                            <constraint firstAttribute="trailing" secondItem="aqa-C5-0dR" secondAttribute="trailing" id="oZ6-TD-6zj"/>
-                                            <constraint firstItem="aqa-C5-0dR" firstAttribute="leading" secondItem="T8C-7s-DNz" secondAttribute="leading" id="rYf-BJ-6Kb"/>
+                                            <constraint firstItem="aqa-C5-0dR" firstAttribute="top" secondItem="T8C-7s-DNz" secondAttribute="top" id="Pt5-rf-DNA"/>
+                                            <constraint firstAttribute="trailing" secondItem="aqa-C5-0dR" secondAttribute="trailing" id="Ysn-Ba-j8H"/>
+                                            <constraint firstAttribute="bottom" secondItem="aqa-C5-0dR" secondAttribute="bottom" id="mR7-Ea-b8e"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="T8C-7s-DNz" firstAttribute="width" secondItem="7SC-Fa-Bdh" secondAttribute="width" id="4uJ-if-WTX"/>
                                     <constraint firstItem="T8C-7s-DNz" firstAttribute="bottom" secondItem="ipZ-zl-JIK" secondAttribute="bottom" id="H8t-lW-8CD"/>
@@ -50,13 +51,13 @@
                         <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="o1c-U6-YM7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="24c-Th-5v2"/>
-                            <constraint firstItem="o1c-U6-YM7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5PV-TG-tvJ"/>
+                            <constraint firstItem="o1c-U6-YM7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5PV-TG-tvJ"/>
                             <constraint firstItem="o1c-U6-YM7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8Aj-Wm-bSJ"/>
                             <constraint firstItem="o1c-U6-YM7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wtV-E0-QMw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tìm kiếm" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="g4N-d0-ibE"/>
+                    <navigationItem key="navigationItem" id="w05-EW-Ha3"/>
                     <connections>
                         <outlet property="contentView" destination="T8C-7s-DNz" id="HDo-2a-l9d"/>
                         <outlet property="stackView" destination="aqa-C5-0dR" id="7aq-Go-mUo"/>
@@ -64,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111.5942028985507" y="-481.47321428571428"/>
+            <point key="canvasLocation" x="2330" y="-481"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ony-Zf-lZV">
@@ -76,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mbQ-Dl-Jlm"/>
+                        <segue destination="Sv2-zL-8ZW" kind="relationship" relationship="viewControllers" id="mbQ-Dl-Jlm"/>
                         <segue destination="3Ui-xu-oMj" kind="relationship" relationship="viewControllers" id="aTW-Gr-XHL"/>
                     </connections>
                 </tabBarController>
@@ -101,6 +102,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yqY-Op-3G8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1112" y="495"/>
+        </scene>
+        <!--Tìm kiếm-->
+        <scene sceneID="eue-xD-HVg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sv2-zL-8ZW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tìm kiếm" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="g4N-d0-ibE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kps-sh-exL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cAT-bw-nTj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Li9-I8-3tv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5942028985507" y="-481.47321428571428"/>
         </scene>
     </scenes>
     <resources>

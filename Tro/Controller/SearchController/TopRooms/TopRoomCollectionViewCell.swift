@@ -15,12 +15,14 @@ class TopRoomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleRoom: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
     @IBOutlet weak var smallAddress: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var bigAddress: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         imageTitle.clipsToBounds = true
         imageTitle.layer.cornerRadius = 10.0
+        stackView.insertCustomizedViewIntoStack(background: .systemBackground, cornerRadius: 10.0, shadowColor: .init(srgbRed: 0, green: 0, blue: 0, alpha: 1), shadowOpacity: 0.5, shadowRadius: 0.5)
     }
 
 }
