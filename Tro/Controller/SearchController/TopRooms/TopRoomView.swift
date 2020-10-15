@@ -8,10 +8,14 @@
 
 import UIKit
 
+protocol TabCollectionView {
+    func didSelectItem()
+}
+
 class TopRoomView: BaseCustomView, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    var delegate : TabCollectionView?
     override func initViewWithNib() {
         super.initViewWithNib()
         initCollectionView()
@@ -34,4 +38,7 @@ class TopRoomView: BaseCustomView, UICollectionViewDataSource, UICollectionViewD
         //cell.moneyLabel.text = "money"
            return cell
        }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectItem()
+    }
 }
