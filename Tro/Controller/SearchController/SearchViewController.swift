@@ -8,7 +8,13 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, TabCollectionView {
+    func didSelectItem() {
+        let vc = DetailRoomViewController()
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var contentView: UIView!
@@ -37,6 +43,7 @@ class SearchViewController: UIViewController {
     }
     func initTopRoom(){
         let topRoom = TopRoomView()
+        topRoom.delegate = self
         stackView.addArrangedSubview(topRoom)
     }
 

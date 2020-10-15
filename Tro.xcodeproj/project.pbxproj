@@ -26,6 +26,9 @@
 		B82829082536F70E006D3EE5 /* TopRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82829072536F70E006D3EE5 /* TopRoomView.swift */; };
 		B828290B2536F76A006D3EE5 /* TopRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82829092536F76A006D3EE5 /* TopRoomCollectionViewCell.swift */; };
 		B828290C2536F76A006D3EE5 /* TopRoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B828290A2536F76A006D3EE5 /* TopRoomCollectionViewCell.xib */; };
+		B8309DB42537E888006CBA75 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8309DB32537E888006CBA75 /* Room.swift */; };
+		B8309DB82537F0D7006CBA75 /* DetailRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8309DB62537F0D7006CBA75 /* DetailRoomViewController.swift */; };
+		B8309DB92537F0D7006CBA75 /* DetailRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8309DB72537F0D7006CBA75 /* DetailRoomViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		B82829072536F70E006D3EE5 /* TopRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoomView.swift; sourceTree = "<group>"; };
 		B82829092536F76A006D3EE5 /* TopRoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		B828290A2536F76A006D3EE5 /* TopRoomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopRoomCollectionViewCell.xib; sourceTree = "<group>"; };
+		B8309DB32537E888006CBA75 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		B8309DB62537F0D7006CBA75 /* DetailRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoomViewController.swift; sourceTree = "<group>"; };
+		B8309DB72537F0D7006CBA75 /* DetailRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailRoomViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +88,12 @@
 		B82828D725369529006D3EE5 /* Tro */ = {
 			isa = PBXGroup;
 			children = (
-				B82828D825369529006D3EE5 /* AppDelegate.swift */,
-				B82828DA25369529006D3EE5 /* SceneDelegate.swift */,
+				B8309DB22537E851006CBA75 /* Model */,
 				B82828EF253699E8006D3EE5 /* Controller */,
 				B82828EE253699DD006D3EE5 /* View */,
 				B82828E12536952C006D3EE5 /* Assets.xcassets */,
+				B82828D825369529006D3EE5 /* AppDelegate.swift */,
+				B82828DA25369529006D3EE5 /* SceneDelegate.swift */,
 				B82828E32536952C006D3EE5 /* LaunchScreen.storyboard */,
 				B82828E62536952C006D3EE5 /* Info.plist */,
 			);
@@ -133,6 +140,7 @@
 		B82828F62536A1A1006D3EE5 /* SearchController */ = {
 			isa = PBXGroup;
 			children = (
+				B8309DB52537F0B3006CBA75 /* DetailRoom */,
 				B82829042536F58F006D3EE5 /* TopRooms */,
 				B82828DC25369529006D3EE5 /* SearchViewController.swift */,
 				B82829032536ECD9006D3EE5 /* TrendSearch */,
@@ -160,6 +168,23 @@
 				B828290A2536F76A006D3EE5 /* TopRoomCollectionViewCell.xib */,
 			);
 			path = TopRooms;
+			sourceTree = "<group>";
+		};
+		B8309DB22537E851006CBA75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8309DB32537E888006CBA75 /* Room.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8309DB52537F0B3006CBA75 /* DetailRoom */ = {
+			isa = PBXGroup;
+			children = (
+				B8309DB62537F0D7006CBA75 /* DetailRoomViewController.swift */,
+				B8309DB72537F0D7006CBA75 /* DetailRoomViewController.xib */,
+			);
+			path = DetailRoom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +247,7 @@
 			files = (
 				B82828ED253699D4006D3EE5 /* SearchHeader.xib in Resources */,
 				B828290C2536F76A006D3EE5 /* TopRoomCollectionViewCell.xib in Resources */,
+				B8309DB92537F0D7006CBA75 /* DetailRoomViewController.xib in Resources */,
 				B82828E52536952C006D3EE5 /* LaunchScreen.storyboard in Resources */,
 				B82829022536EA58006D3EE5 /* TrendCollectionViewCell.xib in Resources */,
 				B82829062536F5B4006D3EE5 /* TopRoomView.xib in Resources */,
@@ -247,8 +273,10 @@
 				B828290B2536F76A006D3EE5 /* TopRoomCollectionViewCell.swift in Sources */,
 				B82828DB25369529006D3EE5 /* SceneDelegate.swift in Sources */,
 				B82828FE2536E9B0006D3EE5 /* TrendSearch.swift in Sources */,
+				B8309DB82537F0D7006CBA75 /* DetailRoomViewController.swift in Sources */,
 				B82829082536F70E006D3EE5 /* TopRoomView.swift in Sources */,
 				B82828FA2536D4A7006D3EE5 /* SearchButton.swift in Sources */,
+				B8309DB42537E888006CBA75 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
